@@ -17,7 +17,9 @@ A simple, secure, and user-friendly web-based password generator that creates st
 
 ## 🚀 Live Demo
 
-Simply open `index.html` in your web browser to start generating secure passwords.
+**[Try the Password Generator Live](https://victorke485.github.io/Password-Generator/)**
+
+Alternatively, you can run it locally by opening `index.html` in your web browser.
 
 ## 📁 Project Structure
 
