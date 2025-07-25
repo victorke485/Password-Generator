@@ -94,13 +94,20 @@ const characters = [
 
 let span1 = document.getElementById("password1");
 let span2 = document.getElementById("password2");
+
 function randomPassword() {
-    span1.textContent = "";
-    span2.textContent = "";
-  for (let i = 0; i < 12; i++) {
-    let randomIndex1 = Math.floor(Math.random() * characters.length);
-    span1.textContent += characters[randomIndex1];
-    let randomIndex2 = Math.floor(Math.random() * characters.length);
-    span2.textContent += characters[randomIndex2];
+  span1.textContent = "";
+  span2.textContent = "";
+  const passwordLength = document.getElementById("input").value;
+  if (passwordLength === "" || passwordLength > 20) {
+    window.alert("Enter a valid number between 1 and 20");
+  } else {
+    for (let i = 0; i < passwordLength; i++) {
+      let randomIndex1 = Math.floor(Math.random() * characters.length);
+      span1.textContent += characters[randomIndex1];
+      let randomIndex2 = Math.floor(Math.random() * characters.length);
+      span2.textContent += characters[randomIndex2];
+    }
   }
+  document.getElementById("input").value = "";
 }
