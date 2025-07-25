@@ -109,5 +109,5 @@ function randomPassword() {
       span2.textContent += characters[randomIndex2];
     }
   }
-  document.getElementById("input").value = "";
+  
 }
